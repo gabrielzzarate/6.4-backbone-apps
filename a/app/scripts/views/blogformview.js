@@ -11,7 +11,7 @@ var BlogFormView = Backbone.View.extend({
   class: 'form-horizontal',
 
   template: formTemplate,
-  
+
 
   events: {
     "click #submit-button" : "formatPost",
@@ -24,19 +24,20 @@ var BlogFormView = Backbone.View.extend({
 
     },
   render: function(){
-    console.log(this.$el);
+
     this.$el.html(this.template());
     return this;
   },
 
   formatPost: function(event){
+    console.log('formatting...');
     event.preventDefault();
     var postData = this.$el.serializeArray().reduce(function(acum, i) {
      acum[i.name] = i.value;
      return acum;
       }, {});
       console.log(postData);
-      this.collection.create(postData);
+      this.collection.fetch(postData);
   }
 
 
