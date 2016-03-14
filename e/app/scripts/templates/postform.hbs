@@ -8,6 +8,7 @@
         <h4 class="modal-title" id="myModalLabel">Write a New Blog Post</h4>
       </div>
       <div class="modal-body">
+        <form>
         <div class="form-group">
           <div class=" col-md-offset-4">
 
@@ -15,6 +16,7 @@
 
           <label for="tite-input" class="col-sm-2 control-label">Title</label>
           <div class="col-sm-10">
+
             <input type="text" name="title" class="form-control" id="title-input" placeholder="Post title">
           </div>
         </div>
@@ -27,19 +29,20 @@
         <div class="form-group">
           <label for="text-input" class="col-sm-2 control-label">Body</label>
           <div class="col-sm-10">
-            <textarea id="text-input" name="content" class="form-control" rows="5"></textarea>
+            <textarea id="text-input" name="content" class="form-control" rows="6"></textarea>
           </div>
 
         </div>
 
-
+      </form>
 
 
       </div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button name="submit" class= "btn btn-primary" data-dismiss="modal" aria-label="Close" type="submit" id="submit-button">Submit</button>
-        
+
 
       </div>
     </div>

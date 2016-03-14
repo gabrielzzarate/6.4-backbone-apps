@@ -30,7 +30,7 @@ var Router = Backbone.Router.extend({
     //  var formView = new FormView.BlogFormView({collection: posts});
 
         posts.fetch().done(function(){
-          
+
           $('#sidebar').append(postList.render().el);
 
 

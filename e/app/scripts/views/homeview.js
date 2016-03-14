@@ -43,7 +43,7 @@ var BlogFormView = Backbone.View.extend({
 
   initialize: function () {
 
-    this.listenTo(this.collection, "add", this.render);
+    //this.listenTo(this.collection, "add", this.render);
 
     },
   render: function(){
@@ -54,9 +54,10 @@ var BlogFormView = Backbone.View.extend({
   },
 
   formatPost: function(event){
+
     console.log('formatting...');
     event.preventDefault();
-    var postData = this.$el.serializeArray().reduce(function(acum, i) {
+    var postData = this.$el.find('form').serializeArray().reduce(function(acum, i) {
      acum[i.name] = i.value;
      return acum;
       }, {});

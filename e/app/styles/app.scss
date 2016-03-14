@@ -99,22 +99,6 @@ body {
 
 //modal
 
-#title-input {
-  position: relative;
-  top: -9px;
-}
-
-#author-input {
-  position: relative;
-  top: 3px
-}
-
-#text-input {
-  position: relative;
-  top: 10px;
-}
-
-.modal-footer {
-  position: relative;
-  top: 20px;
+.modal-content {
+  height: 350px;
 }
